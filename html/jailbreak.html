@@ -1,0 +1,65 @@
+---
+layout: default
+title: 'Jailbreak'
+permalink: /jailbreak.html
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation on the Audio Modality</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .highlight {
+            background-color: #f9f9f9;
+            border-left: 4px solid #2980b9;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .note {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<article>
+    <h2>Jailbreaks Based on Our Dataset</h2>
+  
+    <section>
+      <h3>Jailbreak Attack Performance</h3>
+      <p>SafeBench demonstrates its potential as a foundation dataset for jailbreak attacks, revealing increased safety risks in multimodal language models (MLLMs). Three popular jailbreak attack methods were applied to MiniBench, resulting in higher Attack Success Rates (ASR) and lower Safety Robustness Indices (SRI) across tested models. For instance, the LPT method increased ASR by up to 57.6%.</p>
+    </section>
+   <img src="assets/img/jailbreak1.png" alt="img1">
+    <section>
+      <h3>Comparative Analysis</h3>
+      <p>When comparing SafeBench with other datasets under jailbreak attacks, MLLMs showed the highest vulnerability on SafeBench, with an ASR of 56.2 and an SRI of 46.5. This performance was observed across 50 randomly selected samples from 5 overlapping risk categories shared by 4 datasets.</p>
+    </section>
+  <img src="assets/img/jailbreak2.png" alt="img2">
+    <section>
+      <h3>SafeBench's Unique Features</h3>
+      <p>Unlike other datasets constructed based on existing attack methods, SafeBench is designed to assess safety risks under non-attack conditions. However, it proves highly effective in inducing safety risks when combined with jailbreak attacks, making it an excellent baseline dataset for red team evaluations.</p>
+    </section>
+  
+    <section>
+      <h3>Conclusion</h3>
+      <p>These experiments demonstrate SafeBench's effectiveness as a high-quality baseline dataset for evaluating MLLM safety, particularly in revealing vulnerabilities under attack conditions. Its versatility in both standard and jailbreak scenarios makes it a valuable tool for comprehensive safety assessments.</p>
+    </section>
+  </article>
+</html>
